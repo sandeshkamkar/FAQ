@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{background-color: pink;}
+  </style>
+</head>
+<body>
+  <picture>
+  <img src="./assets/images/background-pattern-desktop.svg" 
+  alt="">
+</picture>
+<main>
+  <h1>
+    <img class="icon-star" src="./assets/images/icon-star.svg" alt="">
+    FAQs</h1>
+  <section class="question">
+   <b>What is Frontend Mentor, and how will it help me?</b>
+    <span >
+      <img src="./assets/images/icon-plus.svg" alt="" onclick="enabledisbleone()" class="plus">
+    </span>
+    <div class="answer">
+  <p>
+  Frontend Mentor offers realistic coding challenges to help developers improve their 
+  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+  all levels and ideal for portfolio building.
+</p>
+    </div>
+  </section>
+  <section class="question">
+    <b>Is Frontend Mentor free?</b>  
+    <span >
+      <img src="./assets/images/icon-plus.svg" alt=""onclick="enabledisbletwo()"class="plus">
+    </span>
+    <div class="answer">
+     <p> Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+      option providing access to a range of projects suitable for all skill levels.
+    </p>
+    </div>
+  </section>
+  <section class="question">
+    <b>Can I use Frontend Mentor projects in my portfolio?</b>
+    <span >
+      <img src="./assets/images/icon-plus.svg" alt=""onclick="enabledisblethree() "class="plus">
+    </span>
+    <div class="answer">
+  <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+  way to showcase your skills to potential employers!
+  </p>    
+</div>
+  </section>
+  <section class="question">
+   <b> How can I get help if I'm stuck on a Frontend Mentor challenge?</b>
+    <span >
+      <img src="./assets/images/icon-plus.svg" alt=""onclick="enabledisblefour() "class="plus">
+    </span>
+    <div class="answer">
+    <p>  
+      The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+      channel where you can ask questions and seek support from other community members.
+    </p> 
+  
+
+    </div>
+  </section>
+  
+    <script>
+      let plus=document.getElementsByClassName('plus')
+      let answer=document.getElementsByClassName("answer")
+
+      function enabledisbleone(){
+      if (answer[0].style.visibility=="hidden")
+      {
+      answer[0].style.visibility="visible";
+      plus[0].src="./assets/images/icon-minus.svg"
+      }
+      else{
+        answer[0].style.visibility="hidden";
+        plus[0].src="./assets/images/icon-plus.svg"
+      }
+    }   
+    
+    function enabledisbletwo(){
+        if (answer[1].style.visibility=="hidden")
+      {
+      answer[1].style.visibility="visible";
+      plus[1].src="./assets/images/icon-minus.svg"
+      }
+      else {
+        answer[1].style.visibility="hidden";
+        plus[1].src="./assets/images/icon-plus.svg"
+      }
+    }   
+
+    function enabledisblethree(){
+        if (answer[2].style.visibility=="hidden")
+      {
+      answer[2].style.visibility="visible";
+      plus[2].src="./assets/images/icon-minus.svg"
+      }
+      else{
+        answer[2].style.visibility="hidden";
+        plus[2].src="./assets/images/icon-plus.svg"
+      }
+    }   
+
+    function enabledisblefour(){
+        if (answer[3].style.visibility=="hidden")
+      {
+      answer[3].style.visibility="visible";
+      plus[3].src="./assets/images/icon-minus.svg"
+      }
+      else{
+        answer[3].style.visibility="hidden";
+        plus[3].src="./assets/images/icon-plus.svg"
+      }
+    }   
+    </script>
+ 
+
+</main>
+  
+
+
+  
+
+  
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
